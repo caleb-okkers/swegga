@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swegga - Home</title>
+    <link rel="stylesheet" href="./css/styling.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="banner"><img src="./graphicFiles/swegga.jpg" alt=""></div>
+
+        <div id="page">
+
+            <div><img src="./graphicFiles/delivery.gif" alt=""></div>
+        <center>
+            <div class="nav">
+                <img src="./graphicFiles/links.gif" usemap="#navbarLinks" alt="">
+                <map name="navbarLinks">
+                    <area shape="rect" coords="5,5, 95,35" alt="home" href="index.html">
+                    <area shape="rect" coords="100,5, 190,35" alt="home" href="services.html">
+                    <area shape="rect" coords="201,5, 297,35" alt="home" href="products.html">
+                    <area shape="rect" coords="300,5, 439,35" alt="home" href="orderStatus.html">
+                    <area shape="rect" coords="445,5, 550,35" alt="home" href="ContactUs.html">
+                </map>
+            </div>
+		</center>
+
+
+
+            <div class="table">
+                <center>
+                    <caption>Product summary</caption>
+                </center>
+                <form  action="orders">
+                    <table border="1px">
+                        <tr>
+
+                            <th>Description</th>
+                            <th>Size</th>
+                            <th>Colour</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">Female Ski Jackets</a></td>
+                            <td><select id="size" name="Size">
+                                    <option value="S">small</option>
+                                    <option value="M">Medium</option>
+                                    <option value="L">Large</option>
+                                </select></td>
+                            <td>
+                                <select id="colour" name="colour">
+                                    <option value="red">Red</option>
+                                    <option value="blue">Pink</option>
+                                    <option value="yellow">White</option>
+                                </select>
+                            </td>
+                            <td id="fmalePrice">150.95</td>
+                            <td><input type="text" id="fmaleQnty"></td>
+                            <td id="fmaleTotal">R301.90</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Male Ski Jackets</a></td>
+                            <td><select id="size" name="Size">
+                                    <option value="S">small</option>
+                                    <option value="M">Medium</option>
+                                    <option value="L">Large</option>
+                                </select></td>
+                            <td>
+                                <select id="colour" name="colour">
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="yellow">Black</option>
+                                </select>
+                            </td>
+                            <td id="malePrice">180.95</td>
+                            <td><input type="text" id="maleQnty"></td>
+                            <td id="maleTotal">R723.80</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                Click to confirm and process your order
+                            </td>
+                            <td>
+                                <center><button id="calculate">Total Price</button></center>
+                            </td>
+                            <td id="finalTotal">1025.70</td>
+                        </tr>
+
+
+                    </table>
+
+                </form>
+            </div>
+
+            <footer><p class="copyright">© 2020 Swegga Fashion – Caleb Okkers</p></footer>
+        </div>
+
+    </main>
+<script src="./script/code.js"></script>
+</body>
+
+</html>
+
